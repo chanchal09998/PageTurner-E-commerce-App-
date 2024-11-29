@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Layout from "./Layout";
 import "./Dashboard.css";
 import Sidebar from "./DashboardComponents/Sidebar";
-import Overview from "./DashboardComponents/OverView";
 import Book from "./DashboardComponents/Book";
 import Orders from "./DashboardComponents/Orders";
 import Settings from "./DashboardComponents/Settings";
+import Overview from "./DashboardComponents/Overview";
 
 const Dashboard = () => {
   const [activeComponent, setActiveComponent] = useState("dashboard");
