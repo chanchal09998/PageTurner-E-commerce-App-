@@ -8,7 +8,7 @@ import BestSeller from "./Home_components/BestSeller";
 import Review_Card from "./Home_components/Review_Card";
 import { Link } from "react-router-dom";
 import Card from "../utility/Card";
-import Services from "./Home_components/services";
+import Services from "./Home_components/Services";
 
 const Home = () => {
   const [trendingBook, setTrendingBook] = useState([]);
