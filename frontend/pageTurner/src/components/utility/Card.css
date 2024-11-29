@@ -1,0 +1,162 @@
+.book-card {
+  width: 240px;
+  height: 320px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 12px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  width: 100%;
+  height: 60%;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.book-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Book Info Section */
+.book-info {
+  padding: 8px;
+  text-align: center;
+}
+
+.book-title {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+
+.author {
+  font-size: 0.95rem;
+  color: #777;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+
+.rating {
+  font-size: 0.85rem;
+  color: #f1c40f;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+
+/* Price Section */
+.price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #27ae60;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+/* Actions Section */
+.actions {
+  margin: 0;
+  text-align: left;
+}
+
+.add-now-btn {
+  width: 100%;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-now-btn:hover {
+  background-color: #4c44b8;
+  transform: scale(1.02);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .book-card {
+    width: 200px;
+    height: 280px;
+    padding: 10px;
+  }
+
+  .book-title {
+    font-size: 1rem;
+  }
+
+  .author {
+    font-size: 0.9rem;
+  }
+
+  .rating {
+    font-size: 0.8rem;
+  }
+
+  .price {
+    font-size: 0.9rem;
+  }
+
+  .add-now-btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .book-card {
+    width: 150px;
+    height: 240px;
+    padding: 8px;
+  }
+
+  .image-container {
+    height: 50%;
+  }
+
+  .book-title {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+
+  .author {
+    font-size: 0.8rem;
+  }
+
+  .rating {
+    font-size: 0.75rem;
+  }
+
+  .price {
+    font-size: 0.8rem;
+  }
+
+  .add-now-btn {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,213 @@
+/* Main Container */
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  color: #333;
+  background-color: #f4f6f9; /* Subtle background color */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for the main container */
+}
+
+/* User Info and Orders Section */
+.user-info,
+.user-orders {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out; /* Smooth hover transition */
+  overflow: scroll;
+}
+
+/* Hover effect on user info and orders section */
+.user-info:hover,
+.user-orders:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Header Styling */
+h3 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Table Section */
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #444;
+}
+
+.order-table th,
+.order-table td {
+  padding: 0.9rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Header background and text color */
+.order-table th {
+  background-color: #009688; /* Soft teal background for headers */
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Table rows hover effect */
+.order-table tr {
+  transition: background-color 0.3s ease;
+}
+
+.order-table tr:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  cursor: pointer;
+}
+
+/* Table cell hover effect */
+.order-table td {
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for row hover */
+}
+
+.order-table td:hover {
+  background-color: #e0f2f1; /* Slight teal hover effect on cell */
+}
+
+/* Nested Table for cart items */
+.order-table td table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table td table td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.order-table td table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Popup Styling */
+.order-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup Content */
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.popup-content p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Close Button Styling */
+.close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #f44336; /* Red color on hover for the close button */
+}
+
+/* Responsive Styling */
+
+/* For small screens */
+@media (max-width: 768px) {
+  .user-details-container {
+    padding: 1.5rem;
+    width: 100%;
+    background-color: #e9f4f4; /* Soft background on smaller screens */
+  }
+
+  .user-info,
+  .user-orders {
+    padding: 1rem;
+  }
+
+  /* Table Styling for small screens */
+  .order-table {
+    font-size: 0.9rem;
+  }
+
+  .order-table th,
+  .order-table td {
+    padding: 0.5rem;
+  }
+
+  /* Adjusting nested table padding */
+  .order-table td table td {
+    padding: 0.4rem;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .popup-content {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: none;
+  }
+
+  .user-orders {
+    overflow: scroll;
+  }
+
+  /* Adjusting table for mobile */
+  .order-table th,
+  .order-table td {
+    padding: 0.4rem;
+  }
+
+  .order-table td {
+    font-size: 0.9rem;
+  }
+
+  .order-table td table td {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}

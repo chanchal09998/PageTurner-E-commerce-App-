@@ -1,0 +1,122 @@
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    1fr
+  ); /* Responsive grid for various screen sizes */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Softer background for elegance */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); /* Enhanced depth with shadow */
+}
+
+/* Pagination Container */
+.page-numbers {
+  background: #ffffff; /* Clean white background */
+  border-radius: 10px; /* Smoother rounded corners */
+  padding: 12px 20px; /* Slightly increased padding for spacing */
+  margin-top: 30px; /* Larger margin for separation */
+  width: fit-content; /* Adjusts to content size */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Pagination Buttons */
+.page-numbers button {
+  padding: 10px 16px; /* Balanced padding */
+  margin: 0; /* Remove extra margins */
+  background: linear-gradient(
+    135deg,
+    #8e44ad,
+    #6c5ce7
+  ); /* Beautiful gradient for buttons */
+  color: #ffffff; /* White text for contrast */
+  border: none; /* No border for buttons */
+  border-radius: 8px; /* Smooth rounded corners */
+  font-size: 0.9rem; /* Standard font size */
+  font-weight: bold; /* Make buttons visually strong */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect for buttons */
+.page-numbers button:hover {
+  background: linear-gradient(
+    135deg,
+    #6c5ce7,
+    #8e44ad
+  ); /* Invert gradient for hover */
+  transform: scale(1.1); /* Slight enlargement for feedback */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Active Page Button */
+.page-numbers button.active {
+  background: #27ae60; /* Green for active state */
+  color: #ffffff; /* Keep text white */
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3); /* Highlight active button */
+  pointer-events: none; /* Disable interaction for active button */
+}
+
+/* Responsive Styles for Pagination */
+@media screen and (max-width: 1024px) {
+  .products-container {
+    grid-template-columns: repeat(4, 1fr); /* Adjusted grid for tablets */
+    gap: 10px;
+  }
+
+  .page-numbers {
+    padding: 10px 15px; /* Reduced padding for smaller screens */
+  }
+
+  .page-numbers button {
+    padding: 8px 12px; /* Reduced button size */
+    font-size: 0.85rem; /* Smaller font */
+  }
+}
+/* Responsive Styles for Pagination */
+@media screen and (max-width: 768px) {
+  .products-container {
+    grid-template-columns: repeat(3, 1fr); /* Adjusted grid for tablets */
+    gap: 16px;
+  }
+
+  .page-numbers {
+    padding: 10px 15px; /* Reduced padding for smaller screens */
+  }
+
+  .page-numbers button {
+    padding: 8px 12px; /* Reduced button size */
+    font-size: 0.85rem; /* Smaller font */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr); /* Compact grid for small devices */
+    gap: 12px;
+  }
+
+  .page-numbers {
+    padding: 8px 10px; /* Compact padding for smaller screens */
+    gap: 8px; /* Smaller gap between buttons */
+  }
+
+  .page-numbers button {
+    padding: 6px 10px; /* Compact button size */
+    font-size: 0.8rem; /* Smaller font size */
+  }
+}
+
+/* Disable default scrollbar */
+.page-numbers::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}

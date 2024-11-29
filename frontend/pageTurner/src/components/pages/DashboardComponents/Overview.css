@@ -1,0 +1,130 @@
+/* Overview Section Styling */
+.overview {
+  padding: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Title Styling */
+.overview-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Statistics Cards */
+.overview-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #f0f9ff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #007bff;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Monthly Stats Progress Bars */
+.monthly-stats {
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.monthly-stats h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.stat-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.stat-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.progress {
+  height: 100%;
+  background: #ff9800;
+}
+
+/* Recent Activities */
+.recent-activities {
+  background: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activities h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.recent-activities ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recent-activities li {
+  font-size: 16px;
+  padding: 5px 0;
+  color: #007bff;
+  border-bottom: 1px solid #ddd;
+}
+
+.recent-activities li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .overview-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .progress-bar {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .overview-cards {
+    grid-template-columns: 1fr;
+  }
+}

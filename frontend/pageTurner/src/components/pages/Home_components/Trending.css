@@ -1,0 +1,73 @@
+.trending-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0 20px;
+  background-color: white;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px #6f45e26a;
+}
+
+.trending-circle img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.trending-circle:hover {
+  background: linear-gradient(135deg, #f7b42c, #fc575e);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .trending-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0 15px;
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .trending-circle img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .trending-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0 10px;
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .trending-circle img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

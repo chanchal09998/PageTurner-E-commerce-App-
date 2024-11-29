@@ -1,0 +1,14 @@
+.navbar-toggler {
+  flex: 0 0 auto !important; /* Prevents full-width stretching */
+  width: auto; /* Sets width to content size */
+}
+.borderBottom {
+  border-bottom: 2px solid #007bff !important;
+  padding-bottom: 2px !important;
+}
+
+@media (max-width: 768px) {
+  .borderBottom {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,49 @@
+# Ignore Node.js dependencies (common to both frontend and backend)
+node_modules/
+
+# Ignore build outputs
+frontend/dist/
+frontend/build/
+
+# Ignore environment files
+frontend/.env
+backend/.env
+
+# Ignore logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore IDE and editor settings
+*.idea/
+.vscode/
+*.sublime-workspace
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore production/public build folders
+backend/public/
+frontend/assets/generated/
+
+# Ignore temporary or lock files
+*.lock
+*.cache
+*.tmp
+
+# Ignore testing/coverage data
+coverage/
+.nyc_output/
+
+# Specific files to ignore in your backend
+backend/public/uploads/
+backend/book_inventory/temp_files/
+
+# Ignore frontend temporary files
+frontend/src/assets/temp_files/
+frontend/.eslintcache
+
+# Ignore miscellaneous files
+*.bak
+*.swp

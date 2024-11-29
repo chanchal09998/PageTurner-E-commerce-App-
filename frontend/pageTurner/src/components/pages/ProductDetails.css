@@ -1,0 +1,385 @@
+.product-details-container {
+  width: 90%;
+  display: flex;
+  gap: 20px; /* Add gap between image carousel and details */
+  padding: 20px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.children-favourite-text {
+  font-weight: bolder;
+  color: #6e45e2;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+  background: linear-gradient(138deg, #f3e7e9 0%, #e3eeff 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+/* carousel styling */
+
+.img-carousel-container {
+  width: 55%;
+  max-height: 600px;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(8, 249, 140, 0.5),
+    rgba(25, 25, 25, 0.9)
+  );
+  /* background: linear-gradient(135deg, #f9f9f9 50%, #e0eafc); */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-carousel-container .carousel .slider-wrapper {
+  height: 400px; /* Restrict the main image section height */
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-carousel-container .carousel .slider-wrapper img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Add rounded corners to images */
+}
+
+.carousel .thumbs-wrapper {
+  margin-top: 10px; /* Space between the main image and thumbnails */
+}
+
+.carousel .thumbs {
+  display: flex;
+  justify-content: center; /* Center the thumbnails */
+  gap: 10px; /* Add some spacing between thumbnails */
+}
+
+.carousel .thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.carousel .thumb img:hover {
+  transform: scale(1.05);
+}
+
+/***********************
+ details container styling
+ 
+**************************** */
+.details-container {
+  width: 45%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.name-and-author {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ececec;
+}
+
+.name-and-author h3 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.name-and-author h4 {
+  font-style: italic;
+  color: #6e45e2;
+  font-size: 1.5rem;
+} /* Price and rating */
+.price-and-rating {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-and-rating h2 {
+  font-size: 2rem;
+  color: #6e45e2;
+  font-weight: bold;
+}
+
+.price-and-rating h2 span del {
+  color: #e74c3c;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.price-and-rating h5 {
+  font-size: 1.2rem;
+  color: #333;
+  background: #f3f3f3;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* Description */
+.description {
+  padding: 20px 0;
+  text-align: justify;
+  line-height: 1.6;
+  color: #666;
+}
+
+.description p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+/* Add to cart section */
+.add-to-cart {
+  margin-top: 20px;
+}
+
+.add-to-cart button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #6e45e2, #89d4cf);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.add-to-cart button:hover {
+  background: linear-gradient(135deg, #574ae2, #67d2ce); /* Hover effect */
+  cursor: pointer;
+}
+
+.add-to-cart p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Extra book details */
+.extra-details {
+  padding-top: 20px;
+}
+
+.extra-details h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.extra-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extra-details ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.extra-details ul li span {
+  color: #555;
+}
+
+.extra-details ul li span:nth-child(3) {
+  font-weight: bold;
+  color: #333;
+}
+
+/* *****************
+suggested-book styling
+******************** */
+
+.suggestion-text {
+  font-weight: bolder;
+  color: #e2e2e2; /* Lighter text color for contrast */
+  padding: 20px; /* Increased padding */
+  text-align: center;
+  border-radius: 15px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  ); /* Dark red to transparent */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  letter-spacing: 1.5px; /* Increased letter spacing */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+}
+
+.suggestions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+.suggestions::-webkit-scrollbar {
+  width: 100%; /* Make the scrollbar width fit the division */
+  height: 2px; /* Set the scrollbar height to 2 pixels */
+}
+
+/* Track - Background of the scrollbar */
+.suggestions::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light background for the track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Thumb - The draggable part */
+.suggestions::-webkit-scrollbar-thumb {
+  background-color: #6e45e2; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Adds a little shadow inside for depth */
+}
+
+/* Hover effect */
+.suggestions::-webkit-scrollbar-thumb:hover {
+  background-color: #4b30d1; /* Darker color on hover */
+}
+
+/* responsive styling */
+@media screen and (max-width: 1024px) {
+  .product-details-container {
+    width: 95%; /* Slightly smaller width for better fit */
+    gap: 15px; /* Reduce the gap between the image carousel and details */
+  }
+
+  .img-carousel-container {
+    width: 60%; /* Keep carousel larger to display the product well */
+    padding: 15px;
+  }
+
+  .img-carousel-container .carousel .slider-wrapper {
+    max-height: 350px; /* Reduce the main image section height */
+  }
+  .img-carousel-container .carousel .slider-wrapper img {
+    width: 90%;
+  }
+
+  .details-container {
+    width: 40%; /* Adjust the details width to match carousel width */
+    padding: 15px; /* Slightly reduce padding */
+  }
+
+  .price-and-rating h2 {
+    font-size: 1.8rem; /* Reduce font size for better fit */
+  }
+
+  .extra-details h3 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-details-container {
+    flex-direction: column; /* Stack the carousel and details vertically */
+    width: 100%;
+  }
+
+  .img-carousel-container {
+    width: 80%;
+    margin: 0 auto; /* Center the carousel on the page */
+    height: auto; /* Let the height be auto for vertical layout */
+  }
+  .carousel .thumbs {
+    padding: 0;
+  }
+  .details-container {
+    width: 90%; /* Make details take up most of the width */
+    margin: 20px auto 0; /* Add some top margin */
+    padding: 15px;
+  }
+
+  .name-and-author h3 {
+    font-size: 2rem; /* Reduce font size for better readability */
+  }
+
+  .name-and-author h4 {
+    font-size: 1.3rem;
+  }
+
+  .price-and-rating h2 {
+    font-size: 1.6rem; /* Adjust price font size */
+  }
+
+  .extra-details h3 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-details-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .img-carousel-container {
+    width: 100%; /* Ensure the carousel takes up most of the screen width */
+    padding: 5px; /* Reduce padding for a tighter fit */
+  }
+
+  .img-carousel-container .carousel .slider-wrapper {
+    height: 170px; /* Further reduce the image height */
+  }
+
+  .img-carousel-container .carousel .slider-wrapper img {
+    width: 70%;
+  }
+
+  .carousel .thumb {
+    width: 50px !important; /* Reduce thumbnail width */
+    height: 50px; /* Reduce thumbnail height */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  }
+
+  .details-container {
+    width: 100%; /* Full width for details */
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .name-and-author h3 {
+    font-size: 1.8rem; /* Adjust font size for small screens */
+  }
+
+  .price-and-rating h2 {
+    font-size: 1.4rem;
+  }
+
+  .add-to-cart button {
+    font-size: 1rem; /* Slightly reduce button font size */
+    padding: 10px; /* Adjust button padding */
+  }
+
+  .extra-details ul li {
+    padding: 5px 0;
+    font-size: 0.9rem; /* Make extra details text smaller */
+  }
+
+  .carousel .thumbs {
+    gap: 3px; /* Reduce thumbnail gaps further */
+  }
+}
