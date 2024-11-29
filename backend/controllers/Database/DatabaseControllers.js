@@ -1,7 +1,7 @@
 import Bestseller_Book from "../../models/Bestseller_book_model.js";
 import Book from "../../models/Book_model.js";
 import Children_Book from "../../models/Children_book_model.js";
-import Trending_Book from "../../models/trending_book_model.js";
+import Trending_Book from "../../models/Trending_book_model.js";
 
 export const fetchTrending = async (req, res) => {
   try {
