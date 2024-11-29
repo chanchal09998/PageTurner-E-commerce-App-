@@ -5,10 +5,10 @@ import "./Home.css";
 import hero_book from "../../../assets/hero_book.png";
 import Trending from "./Home_components/Trending";
 import BestSeller from "./Home_components/BestSeller";
-import Services from "./Home_components/services";
 import Review_Card from "./Home_components/Review_Card";
 import { Link } from "react-router-dom";
 import Card from "../utility/Card";
+import Services from "./Home_components/services";
 
 const Home = () => {
   const [trendingBook, setTrendingBook] = useState([]);
