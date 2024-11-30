@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "../pages/Layout";
 import "./Login.css";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../pages/Navbar";
 
@@ -86,6 +86,9 @@ const Login = () => {
 
           <button type="submit">Log In</button>
         </form>
+        <p>
+          Donn't have an account <Link to={"/sign up"}>sign up</Link>
+        </p>
       </div>
     </>
   );
