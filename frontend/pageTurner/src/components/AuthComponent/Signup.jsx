@@ -16,12 +16,15 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:3000/auth/signup", {
-        name,
-        email,
-        password,
-        security,
-      });
+      const { data } = await axios.post(
+        "https://pageturner-e-commerce-app.onrender.com/auth/signup",
+        {
+          name,
+          email,
+          password,
+          security,
+        }
+      );
       console.log(data);
       toast.success("successfully signed up");
       setTimeout(() => {

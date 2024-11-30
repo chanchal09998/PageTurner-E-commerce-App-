@@ -11,7 +11,7 @@ const Orders = () => {
     const today = new Date().toLocaleDateString("en-CA");
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/admin/dashboard/all-orders"
+        "https://pageturner-e-commerce-app.onrender.com/admin/dashboard/all-orders"
       );
       setAllOrders(data.allOrders);
 
@@ -35,7 +35,7 @@ const Orders = () => {
     console.log("approved order clicked");
     try {
       const response = await axios.put(
-        `http://localhost:3000/admin/dashboard/approve-order/${orderId}`
+        `https://pageturner-e-commerce-app.onrender.com/admin/dashboard/approve-order/${orderId}`
       );
 
       if (response.data.success) {

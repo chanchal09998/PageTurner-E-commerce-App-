@@ -56,7 +56,7 @@ const Checkout = () => {
   const verifyPayment = async (paymentData) => {
     try {
       const verificationResponse = await axios.post(
-        "http://localhost:3000/api/payment/verify-payment",
+        "https://pageturner-e-commerce-app.onrender.com/api/payment/verify-payment",
         paymentData
       );
 
@@ -85,7 +85,7 @@ const Checkout = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/checkout/save-orders",
+        "https://pageturner-e-commerce-app.onrender.com/api/checkout/save-orders",
         orderData
       );
 
@@ -114,7 +114,7 @@ const Checkout = () => {
     script.onload = async () => {
       try {
         const { data } = await axios.post(
-          "http://localhost:3000/api/payment/create-order",
+          "https://pageturner-e-commerce-app.onrender.com/api/payment/create-order",
           {
             amount: totalAmount,
           }

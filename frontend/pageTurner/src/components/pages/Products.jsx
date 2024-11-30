@@ -11,7 +11,7 @@ const Products = () => {
   const FetchBookData = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/home/database/books"
+        "https://pageturner-e-commerce-app.onrender.com/home/database/books"
       );
       setBooks(data);
       console.log(data);

@@ -24,7 +24,7 @@ const Book = () => {
   const fetchTotalBook = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/admin/dashboard/total-book"
+        "https://pageturner-e-commerce-app.onrender.com/admin/dashboard/total-book"
       );
       const count = data.reduce((total) => total + 1, 0);
       setTotalBook(count);
@@ -37,7 +37,7 @@ const Book = () => {
   const searchBook = async () => {
     try {
       const { data: book } = await axios.post(
-        "http://localhost:3000/admin/dashboard/search-book",
+        "https://pageturner-e-commerce-app.onrender.com/admin/dashboard/search-book",
         { name: searchBookName }
       );
       setSearchedBook(book); // Set the searched books in state if found
@@ -71,9 +71,12 @@ const Book = () => {
     );
     if (confirmDelete) {
       try {
-        await axios.post("http://localhost:3000/admin/dashboard/delete-book", {
-          _id,
-        });
+        await axios.post(
+          "https://pageturner-e-commerce-app.onrender.com/admin/dashboard/delete-book",
+          {
+            _id,
+          }
+        );
         toast.success("Book deleted successfully");
         fetchTotalBook(); // Refresh book count
         setSearchedBook((prevBooks) =>
@@ -89,7 +92,7 @@ const Book = () => {
   const updateAndUpload = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/admin/dashboard/add-book",
+        "https://pageturner-e-commerce-app.onrender.com/admin/dashboard/add-book",
         {
           title: bookTitle,
           author: bookAuthor,

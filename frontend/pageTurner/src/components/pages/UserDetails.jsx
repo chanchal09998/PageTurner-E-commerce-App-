@@ -23,7 +23,7 @@ const UserDetails = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/fetch/user-orders",
+        "https://pageturner-e-commerce-app.onrender.com/api/fetch/user-orders",
         { email }
       );
 
@@ -48,7 +48,7 @@ const UserDetails = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/fetch/user-details",
+        "https://pageturner-e-commerce-app.onrender.com/api/fetch/user-details",
         { email }
       );
 

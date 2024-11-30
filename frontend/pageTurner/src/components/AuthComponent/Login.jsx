@@ -22,10 +22,13 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:3000/auth/login", {
-        email,
-        password,
-      });
+      const { data } = await axios.post(
+        "https://pageturner-e-commerce-app.onrender.com/auth/login",
+        {
+          email,
+          password,
+        }
+      );
       console.log(data.token);
       localStorage.setItem("token", data.token);
       localStorage.setItem("name", data.user.name);

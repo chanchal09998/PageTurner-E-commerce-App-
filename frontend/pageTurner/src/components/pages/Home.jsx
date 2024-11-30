@@ -18,7 +18,7 @@ const Home = () => {
   const FetchTrendingData = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/home/database/trending"
+        "https://pageturner-e-commerce-app.onrender.com/home/database/trending"
       );
       setTrendingBook(data);
       console.log(data);
@@ -29,7 +29,7 @@ const Home = () => {
   const FetchBestsellerData = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/home/database/bestseller"
+        "https://pageturner-e-commerce-app.onrender.com/home/database/bestseller"
       );
       setbestSellerBook(data);
       console.log(data);
@@ -40,7 +40,7 @@ const Home = () => {
   const FetchBookData = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/home/database/books"
+        "https://pageturner-e-commerce-app.onrender.com/home/database/books"
       );
       setBookData(data.slice(0, 8));
       console.log(data);
@@ -51,7 +51,7 @@ const Home = () => {
   const FetchChildrenData = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/home/database/children"
+        "https://pageturner-e-commerce-app.onrender.com/home/database/children"
       );
       setChildrenBook(data);
       console.log(data);

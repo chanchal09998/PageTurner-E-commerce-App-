@@ -19,7 +19,7 @@ const ProductDetails = () => {
   const fetchBookDetails = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:3000/details/bookdetails/${id}`
+        `https://pageturner-e-commerce-app.onrender.com/details/bookdetails/${id}`
       );
       setBook(data);
       console.log(data); // Set the fetched book data
@@ -31,7 +31,7 @@ const ProductDetails = () => {
   const suggestedBooks = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/home/database/suggested",
+        "https://pageturner-e-commerce-app.onrender.com/home/database/suggested",
         {
           params: { category: book.category, author: book.author }, // Send as query parameter
         }

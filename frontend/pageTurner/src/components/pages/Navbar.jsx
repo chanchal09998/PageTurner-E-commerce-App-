@@ -52,7 +52,7 @@ const Navbar = () => {
 
     try {
       const { data: books } = await axios.post(
-        "http://localhost:3000/home/user/search-book",
+        "https://pageturner-e-commerce-app.onrender.com/home/user/search-book",
         { name: searchBookName }
       );
 
