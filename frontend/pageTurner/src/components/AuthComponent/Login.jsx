@@ -23,7 +23,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://pageturner-e-commerce-app.onrender.com/auth/login",
+        "https://pageturner-e-commerce-app.onrender.com/api/auth/login",
         {
           email,
           password,
