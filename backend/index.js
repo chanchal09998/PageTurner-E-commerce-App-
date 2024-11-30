@@ -10,6 +10,7 @@ import adminRouter from "./routes/AdminRoutes.js";
 import OrderRouter from "./routes/OrdersRoutes.js";
 import userRouter from "./routes/userDetailsRoute.js";
 import searchBookRouter from "./routes/searchBookRoute.js";
+import path from "path";
 
 dotenv.config();
 

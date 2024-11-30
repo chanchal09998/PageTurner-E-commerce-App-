@@ -6,7 +6,8 @@ import Trending_Book from "../../models/Trending_book_model.js";
 export const fetchTrending = async (req, res) => {
   try {
     const TrendingBooks = await Trending_Book.find();
-    const defaultImageUrl = "http://localhost:3000/images/trendings.png";
+    const defaultImageUrl =
+      "https://pageturner-e-commerce-app.onrender.com/images/trendings.png";
 
     const trendingbookWithImage = TrendingBooks.map((book) => {
       return {
@@ -26,7 +27,8 @@ export const fetchTrending = async (req, res) => {
 export const fetchBestseller = async (req, res) => {
   try {
     const bestsellerBooks = await Bestseller_Book.find();
-    const defaultImageUrl = "http://localhost:3000/images/best-seller.png";
+    const defaultImageUrl =
+      "https://pageturner-e-commerce-app.onrender.com/images/best-seller.png";
 
     const bestsellerBookWithImage = bestsellerBooks.map((book) => {
       return {
@@ -46,7 +48,8 @@ export const fetchBestseller = async (req, res) => {
 export const fetchBook = async (req, res) => {
   try {
     const Books = await Book.find();
-    const defaultImageUrl = "http://localhost:3000/images/featured.png";
+    const defaultImageUrl =
+      "https://pageturner-e-commerce-app.onrender.com/images/featured.png";
 
     const bookWithImage = Books.map((book) => {
       return {
@@ -65,7 +68,8 @@ export const fetchBook = async (req, res) => {
 export const fetchChildrenBook = async (req, res) => {
   try {
     const childrenBook = await Children_Book.find();
-    const defaultImageUrl = "http://localhost:3000/images/featured.png";
+    const defaultImageUrl =
+      "https://pageturner-e-commerce-app.onrender.com/images/featured.png";
 
     const childrenbookWithImage = childrenBook.map((book) => {
       return {
@@ -91,7 +95,8 @@ export const fetchSuggestedBook = async (req, res) => {
         message: "Category query parameter is required",
       });
     }
-    const defaultImageUrl = "http://localhost:3000/images/featured.png";
+    const defaultImageUrl =
+      "https://pageturner-e-commerce-app.onrender.com/images/featured.png";
     // Fetch books by category, limit to 10 results
     const suggestions = await Book.find({
       $or: [{ category: category }, { author: author }],

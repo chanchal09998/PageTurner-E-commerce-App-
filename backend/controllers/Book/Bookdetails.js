@@ -20,7 +20,8 @@ const fetchBookDetails = async (req, res) => {
     bookdetail = await Bestseller_Book.findById(id);
   }
 
-  const defaultImageUrl = "http://localhost:3000/images/featured.png";
+  const defaultImageUrl =
+    "https://pageturner-e-commerce-app.onrender.com/images/featured.png";
 
   if (bookdetail) {
     const bookWithImage = {

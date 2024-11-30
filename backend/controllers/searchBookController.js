@@ -23,7 +23,8 @@ export const searchBookController = async (req, res) => {
     }
 
     // Add a default image URL if books lack an image
-    const defaultImageUrl = "http://localhost:3000/images/featured.png";
+    const defaultImageUrl =
+      "https://pageturner-e-commerce-app.onrender.com/images/featured.png";
     const booksWithImage = books.map((book) => ({
       ...book.toObject(),
       imageUrl: book.imageUrl || defaultImageUrl,
