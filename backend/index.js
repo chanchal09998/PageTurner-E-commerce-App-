@@ -17,7 +17,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/api/auth", router);
+app.use("/auth", router);
 app.use("/home", dbrouter);
 app.use("/details", bookRouter);
 app.use("/api", paymentRouter);

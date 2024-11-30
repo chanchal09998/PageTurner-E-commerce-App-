@@ -14,7 +14,7 @@ const AdminLogin = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://pageturner-e-commerce-app.onrender.com/api/auth/admin/login",
+        "https://pageturner-e-commerce-app.onrender.com/auth/admin/login",
         {
           email,
           password,
