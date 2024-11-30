@@ -24,7 +24,6 @@ yarn-error.log*
 Thumbs.db
 
 # Ignore production/public build folders
-backend/public/
 frontend/assets/generated/
 
 # Ignore temporary or lock files
