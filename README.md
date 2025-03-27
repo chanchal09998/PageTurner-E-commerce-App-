@@ -14,12 +14,12 @@ Page Turner is a full-featured e-commerce platform for book lovers, built using 
 
 🛠️ Tech Stack
 
-Frontend: React, Redux, Tailwind CSS
+Frontend: React, Redux, Bootstrap
 
 Backend: Node.js, Express.js, MongoDB, Mongoose
 
 State Management: Redux Toolkit
 
-Payment Gateway: Integrated securely
+Payment Gateway: Integrated securely(Razorpay)
 
 Deployment: Vercel (Frontend), Render (Backend)
