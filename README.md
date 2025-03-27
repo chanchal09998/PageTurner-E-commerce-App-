@@ -6,15 +6,10 @@ Page Turner is a full-featured e-commerce platform for book lovers, built using 
 🚀 Features
 
 ✅ User authentication (JWT & Cookies)
-
 ✅ Add to cart functionality (Redux for state management)
-
 ✅ Secure payment gateway integration
-
 ✅ Seamless checkout process
-
 ✅ Admin panel for managing books & orders
-
 ✅ Fully responsive design
 
 🛠️ Tech Stack
